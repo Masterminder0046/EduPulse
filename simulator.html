@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>What-If Simulator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fefae0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #bc6c25;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #bc6c25;
+    }
+    .impact-box {
+      background-color: #fff3cd;
+      border-left: 5px solid #f9c74f;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">🧪 What-If Simulator</h2>
+
+    <!-- Scenario Input -->
+    <div class="card mb-4">
+      <div class="card-header">📥 Test a Scenario</div>
+      <div class="card-body">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <select class="form-select">
+                <option selected disabled>Select Scenario Type</option>
+                <option value="leave">Faculty Leave</option>
+                <option value="exam">Exam Week</option>
+                <option value="batch">New Batch Added</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Details (e.g., Dr. Khan on leave)">
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-warning w-100">Simulate Impact</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Impact Preview -->
+    <div class="card">
+      <div class="card-header">📊 Impact Preview</div>
+      <div class="card-body">
+        <div class="impact-box">
+          <p><strong>Faculty Leave:</strong> Dr. Khan’s sessions on Wednesday will be reassigned to Mr. Ravi.</p>
+          <p><strong>Room Reallocation:</strong> Room 101 freed for Chemistry at 10:00 AM.</p>
+          <p><strong>Student Notification:</strong> 2 PM Physics moved to 11 AM slot.</p>
+        </div>
+        <button class="btn btn-outline-success mt-3">Apply Changes</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

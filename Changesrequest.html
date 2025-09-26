@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Request Review</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #00b4d8;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #0077b6;
+    }
+    .thread-box {
+      background-color: #e0f7fa;
+      border-left: 5px solid #00b4d8;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">🔄 Change Request Review</h2>
+
+    <!-- Threaded Requests -->
+    <div class="card mb-4">
+      <div class="card-header">📬 Incoming Requests</div>
+      <div class="card-body">
+        <div class="thread-box">
+          <p><strong>Faculty:</strong> Dr. Ayesha Khan</p>
+          <p><strong>Requested Swap:</strong> 3 PM Physics → 11 AM Chemistry</p>
+          <p><strong>Status:</strong> Awaiting Admin Approval</p>
+          <textarea class="form-control mb-2" placeholder="Add comment..."></textarea>
+          <button class="btn btn-success btn-sm">Approve</button>
+          <button class="btn btn-danger btn-sm">Reject</button>
+        </div>
+
+        <div class="thread-box">
+          <p><strong>Faculty:</strong> Mr. Ravi Kumar</p>
+          <p><strong>Requested Swap:</strong> 9 AM Math → 2 PM English</p>
+          <p><strong>Status:</strong> Acknowledged by Student</p>
+          <textarea class="form-control mb-2" placeholder="Add comment..."></textarea>
+          <button class="btn btn-success btn-sm">Approve</button>
+          <button class="btn btn-danger btn-sm">Reject</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- History Log -->
+    <div class="card">
+      <div class="card-header">📜 Threaded History</div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">✅ Dr. Ayesha’s 11 AM Chemistry swap approved by Admin.</li>
+          <li class="list-group-item">❌ Mr. Ravi’s 2 PM English swap rejected due to room clash.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

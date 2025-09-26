@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review & Publish</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1f5f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #2a9d8f;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #264653;
+    }
+    .preview-box {
+      background-color: #e0f7fa;
+      border-left: 5px solid #2a9d8f;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">✅ Review & Publish</h2>
+
+    <!-- Timetable Preview -->
+    <div class="card mb-4">
+      <div class="card-header">📋 Final Timetable Preview</div>
+      <div class="card-body">
+        <div class="preview-box">
+          <p><strong>Monday:</strong> Physics – Room 101 – 9:00 AM</p>
+          <p><strong>Tuesday:</strong> AI Elective – Room 202 – 11:00 AM</p>
+          <p><strong>Wednesday:</strong> Chemistry – Room 103 – 10:00 AM</p>
+          <p><strong>Thursday:</strong> English – Room 104 – 1:00 PM</p>
+          <p><strong>Friday:</strong> Math – Room 105 – 9:00 AM</p>
+        </div>
+        <button class="btn btn-outline-primary mt-3">Export as PDF</button>
+        <button class="btn btn-outline-success mt-3 ms-2">Publish to Portal</button>
+      </div>
+    </div>
+
+    <!-- Approval Notes -->
+    <div class="card">
+      <div class="card-header">📝 Admin Notes</div>
+      <div class="card-body">
+        <textarea class="form-control mb-3" rows="4" placeholder="Add final remarks or approval notes..."></textarea>
+        <button class="btn btn-success">Confirm & Publish</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

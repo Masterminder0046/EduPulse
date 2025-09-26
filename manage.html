@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Faculty & Students</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1f5f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">📋 Manage Faculty & Students</h2>
+
+    <!-- Add New Profile -->
+    <div class="card mb-4">
+      <div class="card-header">➕ Add New Profile</div>
+      <div class="card-body">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="col-md-6">
+              <select class="form-select">
+                <option selected disabled>Select Role</option>
+                <option value="faculty">Faculty</option>
+                <option value="student">Student</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Subject / Elective">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" placeholder="Shift / Batch">
+            </div>
+            <div class="col-md-6">
+              <button class="btn btn-success w-100">Add Profile</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Existing Profiles Table -->
+    <div class="card">
+      <div class="card-header">👥 Existing Profiles</div>
+      <div class="card-body">
+        <table class="table table-bordered table-hover">
+          <thead class="table-light">
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Email</th>
+              <th>Subject</th>
+              <th>Shift</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dr. Ayesha Khan</td>
+              <td>Faculty</td>
+              <td>ayesha@college.edu</td>
+              <td>Physics</td>
+              <td>Morning</td>
+              <td>
+                <button class="btn btn-sm btn-primary">Edit</button>
+                <button class="btn btn-sm btn-danger">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Rahul Mehta</td>
+              <td>Student</td>
+              <td>rahul@student.edu</td>
+              <td>AI Elective</td>
+              <td>Evening</td>
+              <td>
+                <button class="btn btn-sm btn-primary">Edit</button>
+                <button class="btn btn-sm btn-danger">Delete</button>
+              </td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

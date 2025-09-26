@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Faculty Dashboard – Smart Timetable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #52b788;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2d6a4f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">👨‍🏫 Faculty Dashboard</h2>
+
+    <div class="row g-4">
+      <!-- My Timetable -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">📅 My Timetable</div>
+          <div class="card-body">
+            <p>View your teaching schedule with subject, time, and room details.</p>
+            <button class="btn btn-outline-success">View Timetable</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Request Swap -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🔄 Request Swap</div>
+          <div class="card-body">
+            <p>Submit a class swap request and track acknowledgment status.</p>
+            <button class="btn btn-outline-warning">Request Swap</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- QR Attendance Generator -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">📲 QR Attendance Generator</div>
+          <div class="card-body">
+            <p>Generate QR codes for each session and view attendance logs.</p>
+            <button class="btn btn-outline-primary">Generate QR</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teaching Load Tracker -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">📈 Teaching Load Tracker</div>
+          <div class="card-body">
+            <p>Monitor weekly teaching hours, back-to-back sessions, and wellness suggestions.</p>
+            <button class="btn btn-outline-info">View Load Insights</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voice Assistant Panel -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🗣️ Voice Assistant Panel</div>
+          <div class="card-body">
+            <p>Use voice commands like “Show today’s schedule” or “Swap my 3 PM class.”</p>
+            <button class="btn btn-outline-secondary">Try Voice Assistant</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

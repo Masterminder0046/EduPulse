@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conflict Alerts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fffdf6;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #ff6b6b;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #d00000;
+    }
+    .alert-box {
+      background-color: #ffe5e5;
+      border-left: 5px solid #d00000;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">⚠️ Conflict Alerts</h2>
+
+    <!-- Conflict Summary -->
+    <div class="card mb-4">
+      <div class="card-header">🔍 Detected Issues</div>
+      <div class="card-body">
+        <div class="alert-box">
+          <strong>Faculty Overload:</strong> Dr. Ayesha Khan has 6 consecutive sessions on Wednesday.
+          <button class="btn btn-sm btn-outline-danger float-end">Resolve</button>
+        </div>
+        <div class="alert-box">
+          <strong>Room Clash:</strong> Room 101 is double-booked for Physics and Chemistry at 10:00 AM.
+          <button class="btn btn-sm btn-outline-danger float-end">Resolve</button>
+        </div>
+        <div class="alert-box">
+          <strong>Fatigue Risk:</strong> Rahul Mehta has 5 sessions in a row without a break.
+          <button class="btn btn-sm btn-outline-danger float-end">Resolve</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Suggestions -->
+    <div class="card">
+      <div class="card-header">💡 Suggested Fixes</div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item">Swap Dr. Ayesha’s 3 PM session with Dr. Ravi’s 11 AM slot.</li>
+          <li class="list-group-item">Move Chemistry to Room 102 at 10:00 AM.</li>
+          <li class="list-group-item">Add a break for Rahul between 12:00–1:00 PM.</li>
+        </ul>
+        <button class="btn btn-outline-success mt-3">Apply Suggestions</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard – Smart Timetable</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .nav-link {
+      font-weight: 500;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .card-header {
+      background-color: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #023e8a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-4">
+    <h2 class="text-center mb-4 section-title">🧑‍💼 Admin Dashboard</h2>
+
+    <div class="row g-4">
+      <!-- Manage Faculty & Students -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">📋 Manage Faculty & Students</div>
+          <div class="card-body">
+            <p>Add, edit, or remove faculty and student profiles. Assign subjects, shifts, and electives.</p>
+            <button class="btn btn-outline-primary" href="manage.html">Open Module</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Input Module -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">📊 Data Input Module</div>
+          <div class="card-body">
+            <p>Input classrooms, subjects, availability, electives, and leave patterns.</p>
+            <button class="btn btn-outline-primary" href="data_input.html">Open Module</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scheduling Engine -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🧠 Scheduling Engine</div>
+          <div class="card-body">
+            <p>Generate optimized timetables using intent-based logic and constraints.</p>
+            <button class="btn btn-outline-success" href="scheduling.html">Generate Timetable</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conflict Alerts -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">⚠️ Conflict Alerts</div>
+          <div class="card-body">
+            <p>View and resolve flagged overloads, room clashes, and fatigue risks.</p>
+            <button class="btn btn-outline-warning" href="conflict_alerts.html">View Alerts</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Change Request Review -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🔄 Change Request Review</div>
+          <div class="card-body">
+            <p>Review threaded swap requests and approve or reject with comments.</p>
+            <button class="btn btn-outline-info" href="change_requests.html">Review Requests</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- What-If Simulator -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🧪 What-If Simulator</div>
+          <div class="card-body">
+            <p>Test scenarios like faculty leave or exam week and preview timetable impact.</p>
+            <button class="btn btn-outline-secondary" href="simulator.html">Simulate Scenario</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review & Publish -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">✅ Review & Publish</div>
+          <div class="card-body">
+            <p>Finalize and publish the selected timetable. Export or share to portal.</p>
+            <button class="btn btn-outline-dark" href="publish.html">Publish Timetable</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Faculty Wellness Tracker -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🧘 Faculty Wellness Tracker</div>
+          <div class="card-body">
+            <p>Monitor teaching load and leave history. Suggest breaks to prevent burnout.</p>
+            <button class="btn btn-outline-success" href="wellness.html">View Wellness Insights</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Emergency Mode Scheduler -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🚨 Emergency Mode Scheduler</div>
+          <div class="card-body">
+            <p>Auto-generate fallback timetables during holidays or strikes. Send instant alerts.</p>
+            <button class="btn btn-outline-danger" href="emergency.html">Activate Emergency Mode</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Voice Assistant Panel -->
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">🗣️ Voice Assistant Panel</div>
+          <div class="card-body">
+            <p>Use voice commands like “Show today’s schedule” or “Simulate leave impact.”</p>
+            <button class="btn btn-outline-primary" href="voice.html">Try Voice Assistant</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
